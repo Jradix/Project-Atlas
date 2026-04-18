@@ -1,30 +1,56 @@
-🚀 Project Atlas: Your Ultimate Gym Companion
-The Speed-Optimized Workout Logger for Serious Athletes
+# Project Atlas - مشروع أطلس
 
-Project Atlas is a lightweight, high-performance mobile application designed specifically for lifters who want to track their progress without the clutter. No fluff, no distractions—just pure performance to help you crush your goals.
+Project Atlas is a high-performance, minimalist gym logger designed for precision and speed. It focuses on providing a seamless experience for tracking weights, sets, and progress without unnecessary distractions.
 
-🏋️ Key Features:
-Precision Weight Logging: Easily track every set, rep, and weight (KG/LBS) with a clean, intuitive interface.
-Persistent Workout Timer: A rock-solid timer that stays active even if you close the app or restart your phone.
-Extensive Exercise Library: Access a huge database of exercises with support for both English and Arabic names.
-Smart Analytics: Monitor your total volume and workout frequency with automated history logs and weekly progress charts.
-Customizable: Add your own exercises and organize them by muscle group.
-Rocket Speed UI: Built with Jetpack Compose and Room Database, optimized for lightning-fast navigation and zero lag.
+مشروع أطلس هو تطبيق احترافي لتسجيل تمارين الجيم، مصمم للأداء العالي والبساطة. يركز التطبيق على توفير تجربة سلسة لتتبع الأوزان، المجموعات، والتقدم الرياضي بدون تعقيدات غير ضرورية.
 
-📦 Installation
-Download the latest APK from the Releases section and install it on your Android device.
-
-Built with ❤️ for the Fitness Community.
 ---
-🚀 مشروع أطلس (Project Atlas): رفيقك الأمثل في الجيم
-تطبيق تسجيل الأوزان والتمارين المصمم للسرعة والأداء العالي
 
-مشروع أطلس هو تطبيق موبايل خفيف وعالي الأداء، صُمم خصيصاً للاعبي كمال الأجسام والرياضيين الذين يرغبون في تتبع تقدمهم بأسهل وأسرع طريقة ممكنة. التطبيق يركز على الكفاءة والسرعة ليمنحك تجربة "سرعة الصاروخ" أثناء التمرين.
+## English Description
 
-🏋️ أهم المميزات:
-تسجيل دقيق للأوزان: تتبع كل مجموعة (Set) وعدة (Rep) بوضوح تام، مع دعم كامل للكيلوجرام والباوند.
-مؤقت تمرين مستمر: مؤقت احترافي لا يتوقف حتى لو قمت بإغلاق التطبيق أو إعادة تشغيل الهاتف، لضمان دقة وقت تمرينك.
-مكتبة تمارين شاملة: قاعدة بيانات ضخمة للتمارين تدعم اللغتين العربية والإنجليزية.
-تحليلات ذكية: راقب إجمالي الأحمال التدريبية (Volume) ومدى التزامك من خلال سجل التمارين والرسوم البيانية الأسبوعية.
-تخصيص كامل: إمكانية إضافة تمارينك الخاصة وتنظيمها حسب الفئات العضلية.
-واجهة فائقة السرعة: تم بناؤه بأحدث التقنيات لضمان سلاسة التنقل وبدون أي تأخير (Zero Lag).
+### Key Features
+*   **Precision Weight Logging:** Track every set and rep with a clean, intuitive interface. Supports both KG and LBS.
+*   **Persistent Workout Timer:** A robust timer system that continues to run even if the app is closed or the device is restarted.
+*   **Comprehensive Exercise Library:** A large database of exercises with full support for English and Arabic names.
+*   **Performance Analytics:** View your total training volume and frequency through detailed history logs.
+*   **Customization:** Add your own custom exercises and categorize them by muscle groups.
+*   **Optimized UI:** Built with Jetpack Compose for a smooth, "rocket-speed" user experience.
+
+### Tech Stack
+*   **Language:** Kotlin
+*   **UI Framework:** Jetpack Compose
+*   **Database:** Room Persistence Library
+*   **Dependency Injection:** Hilt
+*   **Image Loading:** Coil
+
+---
+
+## الوصف باللغة العربية
+
+### المميزات الرئيسية
+*   **تسجيل دقيق للأوزان:** تتبع كل مجموعة وعدة بواجهة مستخدم نظيفة وسهلة الاستخدام. يدعم الكيلوجرام والباوند.
+*   **مؤقت تمرين مستمر:** نظام توقيت قوي يستمر في العمل حتى عند إغلاق التطبيق أو إعادة تشغيل الجهاز.
+*   **مكتبة تمارين شاملة:** قاعدة بيانات واسعة للتمارين مع دعم كامل للأسماء باللغتين العربية والإنجليزية.
+*   **تحليلات الأداء:** عرض إجمالي الأحمال التدريبية ومدى الالتزام من خلال سجلات التاريخ.
+*   **التخصيص:** إمكانية إضافة تمارين خاصة وتصنيفها حسب العضلة المستهدفة.
+*   **واجهة مستخدم محسنة:** تم التطوير باستخدام Jetpack Compose لضمان سرعة فائقة واستجابة فورية.
+
+---
+
+## Installation - التثبيت
+
+1. Navigate to the **Releases** section.
+2. Download the latest APK file.
+3. Install the APK on your Android device (ensure "Install from unknown sources" is enabled).
+
+1. توجه إلى قسم الإصدارات (Releases).
+2. قم بتحميل أحدث ملف APK.
+3. قم بتثبيت الملف على جهاز الأندرويد الخاص بك.
+
+---
+
+## Attribution
+
+**Vibecoded with love for the fitness community.**
+
+**تم تطويره بأسلوب الـ Vibe Coding لصالح مجتمع الرياضيين.**
