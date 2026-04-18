@@ -6,7 +6,11 @@
 
 Project Atlas is a high-performance, minimalist gym logger designed for precision and speed. It focuses on providing a seamless experience for tracking weights, sets, and progress without unnecessary distractions.
 
+Vibecoded with love by Rady.GFX
+
 مشروع أطلس هو تطبيق احترافي لتسجيل تمارين الجيم، مصمم للأداء العالي والبساطة. يركز التطبيق على توفير تجربة سلسة لتتبع الأوزان، المجموعات، والتقدم الرياضي بدون تعقيدات غير ضرورية.
+
+تم تطويره بأسلوب الفايب كودينج بواسطة Rady.GFX
 
 ---
 
@@ -62,9 +66,3 @@ TIP: To add images, upload them to a folder named 'screenshots' in your repo, th
 2. قم بتحميل أحدث ملف APK.
 3. قم بتثبيت الملف على جهاز الأندرويد الخاص بك (تأكد من تفعيل "تثبيت التطبيقات من مصادر غير معروفة").
 
----
-
-## 🖤 Attribution
-
-**Vibecoded with love for the fitness community.**  
-**تم تطويره بأسلوب الفايب كودينج لمجتمع الرياضيين.**
