@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PROJECT ATLAS - Library (Arabic)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {},
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {},
+                    fontFamily: {
+                        "headline": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#1a1a1a] text-white font-body min-h-screen flex flex-col antialiased selection:bg-[#75ff9e] selection:text-black pb-24 md:pb-0 md:pt-16">
+<!-- TopAppBar -->
+<header class="bg-[#131313]/40 backdrop-blur-md font-['Inter'] tracking-tight font-bold uppercase docked full-width top-0 sticky bg-[#2a2a2a] shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 h-16 w-full z-50">
+<div class="flex items-center gap-4 hover:opacity-80 transition-opacity active:scale-95 transition-transform cursor-pointer">
+<img alt="User profile avatar" class="w-8 h-8 rounded-full border border-[#75ff9e]" data-alt="User profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZqBN5KMdgoRP6rUPmFRGi7t3ZEJz9hbAzaTQNZQhypWPuuYGFD9f6Lz08iE-YEBZGGOlQzHGLlB0sjq-Kg6JLC_EaeeljKtsloowwI0ujeDuH4GEKpVhSzhu83YMIPGh0HGbvgWnW--BPh3_ZJUR9FVrSqt-rVH4rAdxpphFuCGY7NaOjmjO8L8RQJXYMfRzyfUo4XEYpuxpC0lySKGLTcX2MuQQ6cfiB0-cY47UtqBeAn8LCbp0CNAvNMcFgcdofe7r5jzRKHlV6"/>
+<span class="text-xl font-black italic tracking-tighter text-[#75ff9e]">PROJECT ATLAS</span>
+</div>
+<div class="hover:opacity-80 transition-opacity active:scale-95 transition-transform cursor-pointer text-[#75ff9e]">
+<span class="material-symbols-outlined">settings</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full max-w-4xl mx-auto p-4 flex flex-col gap-6">
+<!-- Search & Filter Area -->
+<section class="flex flex-col gap-4 sticky top-16 bg-[#1a1a1a] z-40 py-2">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">search</span>
+<input class="w-full bg-[#222222] border border-[#333333] rounded-DEFAULT py-3 pr-10 pl-4 text-white focus:outline-none focus:border-[#75ff9e] focus:ring-1 focus:ring-[#75ff9e] font-label text-sm placeholder-gray-500 transition-colors" placeholder="البحث عن التمارين..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#75ff9e] cursor-pointer hover:opacity-80">tune</span>
+</div>
+<!-- Horizontal Scrollable Muscle Groups -->
+<div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+<button class="bg-[#75ff9e] text-black px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 hover:bg-opacity-80 transition-colors">جميع العضلات</button>
+<button class="bg-[#222222] text-gray-300 border border-[#333333] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider whitespace-nowrap shrink-0 hover:border-[#75ff9e] transition-colors">الصدر</button>
+<button class="bg-[#222222] text-gray-300 border border-[#333333] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider whitespace-nowrap shrink-0 hover:border-[#75ff9e] transition-colors">الظهر</button>
+<button class="bg-[#222222] text-gray-300 border border-[#333333] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider whitespace-nowrap shrink-0 hover:border-[#75ff9e] transition-colors">الأرجل</button>
+<button class="bg-[#222222] text-gray-300 border border-[#333333] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider whitespace-nowrap shrink-0 hover:border-[#75ff9e] transition-colors">الأكتاف</button>
+<button class="bg-[#222222] text-gray-300 border border-[#333333] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider whitespace-nowrap shrink-0 hover:border-[#75ff9e] transition-colors">الذراعين</button>
+</div>
+</section>
+<!-- Library Header -->
+<div class="flex justify-between items-end border-b border-[#333333] pb-2">
+<h1 class="text-2xl font-headline font-black uppercase tracking-tight text-[#75ff9e]">الأطلس</h1>
+<span class="text-xs text-gray-500 font-label">342 تمرين</span>
+</div>
+<!-- Exercise List (High Density) -->
+<section class="flex flex-col gap-2">
+<!-- Item 1 -->
+<div class="group bg-[#222222] border border-[#333333] rounded-DEFAULT p-3 flex items-center justify-between hover:border-[#75ff9e] transition-colors cursor-pointer">
+<div class="flex items-center gap-4 w-full">
+<!-- RTL: Thumbnail on right conceptually, but flex order puts it first in RTL dom if we want it leading -->
+<div class="w-12 h-12 bg-[#111111] rounded overflow-hidden shrink-0 border border-[#444444] group-hover:border-[#75ff9e] transition-colors relative">
+<img alt="Barbell Bench Press" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Muscular man performing barbell bench press in dark moody gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6Vipwt00b0oHTwSPM4FlsPVWYdSn6ic1RMdbn9X3hEKrYJjk6WwwvgHkEmzWoPLVFVUpXRgUB-azwlsRiEGZj9zc68xY1luz1N9PA0kVj3Ciu9G64oa69oGRTr8dut8WFUuy6NHJk_eaj0nnytlNgvxqHhdoZ8W_9eEsmtvC0vWS1aUQ8jj36QxWeG-9Kdjnmnb5uqXXd6_TpdakqCcTIafH3aXG9oyLg39eQW1KOHW1a6X1rWJtXQnKeB-d7OsWNHKGHPRnowWdx"/>
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/50 text-sm group-hover:text-white transition-colors">play_arrow</span>
+</div>
+<div class="flex flex-col flex-1">
+<h3 class="font-headline font-bold text-sm text-gray-100 group-hover:text-white transition-colors uppercase">ضغط الصدر بالبار</h3>
+<p class="text-xs text-gray-500 font-label mt-0.5">الصدر • أوزان حرة</p>
+</div>
+<button class="text-gray-600 hover:text-[#75ff9e] transition-colors shrink-0">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group bg-[#222222] border border-[#333333] rounded-DEFAULT p-3 flex items-center justify-between hover:border-[#75ff9e] transition-colors cursor-pointer">
+<div class="flex items-center gap-4 w-full">
+<div class="w-12 h-12 bg-[#111111] rounded overflow-hidden shrink-0 border border-[#444444] group-hover:border-[#75ff9e] transition-colors relative">
+<img alt="Deadlift" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Athlete preparing for a heavy deadlift with chalked hands on barbell" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4PaB5zaRI3x1mucrrzujETbHi9mFHVDhrlXp1TsTEfwsYA6RrE7S51UTJSsnZ-8BTozycGMwWjS3Y_kYhTkaKq0Z_jBD3mTrRIv9aZf_9rMKf6FgmqW9ZGDiAYFfLqI8_WaEBTQDoEXeNs-yX1ETfxlmD5maYR60dmK8051LxjsAHkrAkB3yWMjzRSogiQRpO981yH5wjukFed641n23TEhIrZf7jvC8dcH8AsOxUR0Ba4f-1eFLj2gBFR46HK-bvIEtCD6eFOQqA"/>
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/50 text-sm group-hover:text-white transition-colors">play_arrow</span>
+</div>
+<div class="flex flex-col flex-1">
+<h3 class="font-headline font-bold text-sm text-gray-100 group-hover:text-white transition-colors uppercase">الرفعة المميتة</h3>
+<p class="text-xs text-gray-500 font-label mt-0.5">الظهر • أوزان حرة</p>
+</div>
+<button class="text-gray-600 hover:text-[#75ff9e] transition-colors shrink-0">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group bg-[#222222] border border-[#333333] rounded-DEFAULT p-3 flex items-center justify-between hover:border-[#75ff9e] transition-colors cursor-pointer">
+<div class="flex items-center gap-4 w-full">
+<div class="w-12 h-12 bg-[#111111] rounded overflow-hidden shrink-0 border border-[#444444] group-hover:border-[#75ff9e] transition-colors relative">
+<img alt="Squat" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Legs executing a deep barbell back squat in industrial gym setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkLgJKOg-O6IOk2MkIiIyVSz1yYnsc8Qb0op4JIcRkllsN5cLiq6Nqn3_EJVME4DM396480hhE5UASi_Fr8WiTKhaAob81aA_dO9mTZ7Tg04-3EZ-tiFnDV2zpjqiio0W5iYwEkd7fMlwAPpqjt1kFU0QDrUjIkTjvg-0S0ZaTnULDjOW7XP6sLCBvJCZuLLnyzNbzRvFlapW32x7zgPLixPQVEjkadck3NHCeMdDyJS-X4gGQNPlNPp9rwsdhJfHeuOEb7NBf5LPt"/>
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/50 text-sm group-hover:text-white transition-colors">play_arrow</span>
+</div>
+<div class="flex flex-col flex-1">
+<h3 class="font-headline font-bold text-sm text-gray-100 group-hover:text-white transition-colors uppercase">القرفصاء بالبار</h3>
+<p class="text-xs text-gray-500 font-label mt-0.5">الأرجل • أوزان حرة</p>
+</div>
+<button class="text-[#75ff9e] shrink-0">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group bg-[#222222] border border-[#333333] rounded-DEFAULT p-3 flex items-center justify-between hover:border-[#75ff9e] transition-colors cursor-pointer">
+<div class="flex items-center gap-4 w-full">
+<div class="w-12 h-12 bg-[#111111] rounded overflow-hidden shrink-0 border border-[#444444] group-hover:border-[#75ff9e] transition-colors relative flex items-center justify-center">
+<!-- Missing Image Fallback -->
+<span class="material-symbols-outlined text-gray-600 group-hover:text-[#75ff9e] transition-colors">fitness_center</span>
+</div>
+<div class="flex flex-col flex-1">
+<h3 class="font-headline font-bold text-sm text-gray-100 group-hover:text-white transition-colors uppercase">سحب الكابل للأسفل</h3>
+<p class="text-xs text-gray-500 font-label mt-0.5">الظهر • أجهزة الكابل</p>
+</div>
+<button class="text-gray-600 hover:text-[#75ff9e] transition-colors shrink-0">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-[#131313]/80 backdrop-blur-lg font-['Inter'] text-[10px] font-medium tracking-widest docked full-width bottom-0 fixed rounded-t-xl bg-gradient-to-t from-[#131313] to-transparent shadow-[0_-10px_30px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-4 md:hidden">
+<button class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all gap-1">
+<span class="material-symbols-outlined text-2xl">dashboard</span>
+<span>DASHBOARD</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all gap-1">
+<span class="material-symbols-outlined text-2xl">fitness_center</span>
+<span>WORKOUT</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#75ff9e] scale-110 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all gap-1">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span>LIBRARY</span>
+</button>
+</nav>
+</body></html>

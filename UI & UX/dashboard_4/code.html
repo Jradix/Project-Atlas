@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - Project Atlas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: "#0D0D0D",
+                        surface: "#1A1A1A",
+                        primary: "#00E676",
+                        secondary: "#2979FF",
+                        textPrimary: "#FFFFFF",
+                        textSecondary: "#A3A3A3"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: #0D0D0D; color: #FFFFFF; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-textPrimary h-screen flex flex-col overflow-hidden selection:bg-primary selection:text-background pb-20 md:pb-0">
+<!-- TopAppBar from JSON -->
+<header class="bg-[#131313]/40 backdrop-blur-md text-[#75ff9e] font-['Inter'] tracking-tight font-bold uppercase docked full-width top-0 sticky shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 h-16 w-full z-50">
+<div class="flex items-center gap-4">
+<div class="h-8 w-8 rounded-full overflow-hidden bg-surface flex items-center justify-center">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close up portrait of a serious young man with short dark hair in dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD55TZBsZd7ecTpFFdpOBloPJtdoYtxXtHdE3pz4euLVppCg1NfyMgxlROiMY-rxsGJYm_XDxwETO0y2lRrThiVVtwlZKt6NuUiv2x_ZS56kXUr-yg0TE0v01itYVU6VuEWv3OdipX6JRK9v6Z1MpN7jyVTRgC8i7pBgU5FNYSBGZEyhHoMKk6epiuX2Y-2k7Aw4ltnuIYKF95_ouHaFXAho-obIc8O5aim-_XgTR4hhFtXmEFXddk49eQKr0ariturxqgr-kodZDKq"/>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-textSecondary font-medium leading-none mb-1 normal-case tracking-normal font-body">Welcome back, Operator</span>
+<span class="text-xl font-black italic tracking-tighter text-[#75ff9e]">PROJECT ATLAS</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex bg-surface rounded p-0.5 text-xs font-bold tracking-wider mr-2 border border-[#2a2a2a]">
+<button class="px-2 py-1 bg-primary text-background rounded-sm">EN</button>
+<button class="px-2 py-1 text-textSecondary hover:text-textPrimary transition-colors">AR</button>
+</div>
+<div class="flex bg-surface rounded p-0.5 text-xs font-bold tracking-wider border border-[#2a2a2a]">
+<button class="px-2 py-1 text-textSecondary hover:text-textPrimary transition-colors">LBS</button>
+<button class="px-2 py-1 bg-secondary text-background rounded-sm">KG</button>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 text-[#75ff9e]">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto p-6 md:px-8 max-w-7xl mx-auto w-full flex flex-col gap-8 pb-32 relative">
+<!-- The Pulse Graph -->
+<section class="flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<h2 class="text-xl font-bold tracking-tight text-textPrimary uppercase">Volume Pulse</h2>
+<span class="text-xs font-medium text-textSecondary uppercase tracking-widest">Past 4 Weeks</span>
+</div>
+<div class="bg-surface rounded-lg p-6 border border-[#2a2a2a] relative overflow-hidden h-64 flex flex-col justify-between">
+<div class="absolute inset-0 bg-gradient-to-t from-[#2979FF]/10 to-transparent pointer-events-none"></div>
+<div class="flex justify-between items-start z-10">
+<div>
+<span class="text-4xl font-black tracking-tighter text-secondary">24.5k</span>
+<span class="text-xs font-medium text-textSecondary ml-1">KG Total</span>
+</div>
+<div class="flex items-center text-primary text-sm font-bold bg-primary/10 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-sm mr-1">trending_up</span>
+                        +12%
+                    </div>
+</div>
+<!-- Pure Trend Line SVG (Simulated) -->
+<div class="w-full h-32 mt-4 relative z-10">
+<svg class="w-full h-full stroke-secondary overflow-visible" preserveaspectratio="none" viewbox="0 0 100 40">
+<path class="drop-shadow-[0_0_8px_rgba(41,121,255,0.8)]" d="M0,35 Q10,30 20,25 T40,15 T60,20 T80,5 T100,10" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Data Points -->
+<circle cx="0" cy="35" fill="#0D0D0D" r="1.5" stroke="#2979FF" stroke-width="1"></circle>
+<circle cx="20" cy="25" fill="#0D0D0D" r="1.5" stroke="#2979FF" stroke-width="1"></circle>
+<circle cx="40" cy="15" fill="#0D0D0D" r="1.5" stroke="#2979FF" stroke-width="1"></circle>
+<circle cx="60" cy="20" fill="#0D0D0D" r="1.5" stroke="#2979FF" stroke-width="1"></circle>
+<circle cx="80" cy="5" fill="#0D0D0D" r="1.5" stroke="#2979FF" stroke-width="1"></circle>
+<circle class="drop-shadow-[0_0_4px_rgba(41,121,255,1)]" cx="100" cy="10" fill="#2979FF" r="1.5" stroke="#2979FF" stroke-width="1"></circle>
+</svg>
+</div>
+</div>
+</section>
+<!-- Recent Activity Cards -->
+<section class="flex flex-col gap-4">
+<h2 class="text-xl font-bold tracking-tight text-textPrimary uppercase">Recent Activity</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface border border-[#2a2a2a] rounded-lg p-5 flex flex-col gap-3 hover:border-primary/50 transition-colors group">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Hypertrophy Alpha</h3>
+<span class="text-[10px] text-textSecondary font-medium bg-[#131313] px-2 py-1 rounded">TODAY</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="bg-primary/20 text-primary text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider flex items-center">
+<span class="material-symbols-outlined text-[12px] mr-1" data-weight="fill">military_tech</span>
+                            Top Lift
+                        </span>
+<span class="text-xs text-textSecondary font-medium">Squat - 140kg</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface border border-[#2a2a2a] rounded-lg p-5 flex flex-col gap-3 hover:border-primary/50 transition-colors group">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Push Mechanics</h3>
+<span class="text-[10px] text-textSecondary font-medium bg-[#131313] px-2 py-1 rounded">YESTERDAY</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-xs text-textSecondary font-medium bg-[#131313] px-2 py-1 rounded">6 Exercises</span>
+<span class="text-xs text-textSecondary font-medium bg-[#131313] px-2 py-1 rounded">45 Min</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface border border-[#2a2a2a] rounded-lg p-5 flex flex-col gap-3 hover:border-primary/50 transition-colors group">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-bold uppercase tracking-tight group-hover:text-primary transition-colors">Pull Dynamics</h3>
+<span class="text-[10px] text-textSecondary font-medium bg-[#131313] px-2 py-1 rounded">OCT 12</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="bg-secondary/20 text-secondary text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider flex items-center">
+<span class="material-symbols-outlined text-[12px] mr-1" data-weight="fill">trending_up</span>
+                            Volume PR
+                        </span>
+<span class="text-xs text-textSecondary font-medium">Row - 8.5k KG</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FAB -->
+<div class="fixed bottom-24 right-6 md:bottom-8 md:right-8 z-50">
+<button class="bg-primary hover:bg-[#00c853] text-background font-bold tracking-widest uppercase text-sm px-6 py-4 rounded-full shadow-[0_0_20px_rgba(0,230,118,0.4)] flex items-center gap-2 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-weight="fill">play_arrow</span>
+            Start Workout
+        </button>
+</div>
+<!-- BottomNavBar from JSON -->
+<nav class="bg-[#131313]/80 backdrop-blur-lg font-['Inter'] text-[10px] font-medium tracking-widest docked full-width bottom-0 fixed rounded-t-xl bg-gradient-to-t from-[#131313] to-transparent shadow-[0_-10px_30px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 w-full z-40 flex justify-around items-center h-20 pb-4 md:hidden">
+<!-- DASHBOARD (Active) -->
+<div class="flex flex-col items-center justify-center text-[#75ff9e] scale-110 active:translate-y-1 transition-all">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span>DASHBOARD</span>
+</div>
+<!-- WORKOUT (Inactive) -->
+<div class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all">
+<span class="material-symbols-outlined mb-1" data-icon="fitness_center">fitness_center</span>
+<span>WORKOUT</span>
+</div>
+<!-- LIBRARY (Inactive) -->
+<div class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span>LIBRARY</span>
+</div>
+</nav>
+</body></html>

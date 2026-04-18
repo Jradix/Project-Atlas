@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Workout Summary - Project Atlas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#003918",
+                        "inverse-surface": "#e5e2e1",
+                        "error": "#ffb4ab",
+                        "surface-container": "#201f1f",
+                        "surface-dim": "#131313",
+                        "background": "#131313",
+                        "inverse-primary": "#006d35",
+                        "on-secondary-container": "#f2f3ff",
+                        "outline-variant": "#3b4a3d",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#00612e",
+                        "on-secondary-fixed-variant": "#00429b",
+                        "on-secondary": "#002d6e",
+                        "tertiary-fixed-dim": "#fdb878",
+                        "secondary-fixed": "#d9e2ff",
+                        "error-container": "#93000a",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#0068ed",
+                        "on-error": "#690005",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-container": "#ffba79",
+                        "surface-tint": "#00e475",
+                        "surface-variant": "#353534",
+                        "surface-container-highest": "#353534",
+                        "surface": "#131313",
+                        "tertiary-fixed": "#ffdcbf",
+                        "on-tertiary-fixed": "#2d1600",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary": "#4b2800",
+                        "on-secondary-fixed": "#001945",
+                        "on-tertiary-fixed-variant": "#6a3c03",
+                        "secondary": "#b0c6ff",
+                        "primary-fixed-dim": "#00e475",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-fixed": "#00210b",
+                        "secondary-fixed-dim": "#b0c6ff",
+                        "on-surface": "#e5e2e1",
+                        "on-surface-variant": "#bacbb9",
+                        "tertiary": "#ffdec4",
+                        "outline": "#859585",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-container": "#794810",
+                        "primary-container": "#00e676",
+                        "on-primary-fixed-variant": "#005226",
+                        "primary": "#75ff9e",
+                        "inverse-on-surface": "#313030",
+                        "primary-fixed": "#62ff96"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #131313; color: #e5e2e1; }
+        .glass-panel { background: rgba(42, 42, 42, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .hero-metric { font-size: 4rem; font-weight: 900; line-height: 1; letter-spacing: -0.05em; }
+        .ghost-border { border: 1px solid rgba(59, 74, 61, 0.15); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary">
+<main class="flex-grow flex flex-col px-6 pt-12 pb-24 max-w-lg mx-auto w-full relative z-10">
+<header class="mb-12">
+<h1 class="text-primary text-sm font-bold tracking-widest uppercase mb-2">Workout Complete</h1>
+<h2 class="text-3xl font-black italic tracking-tighter">PROJECT ATLAS</h2>
+</header>
+<section class="mb-10 relative">
+<div class="absolute -inset-4 bg-primary/5 blur-2xl rounded-full z-0"></div>
+<div class="relative z-10">
+<p class="text-on-surface-variant text-xs font-medium tracking-widest uppercase mb-1">Total Volume</p>
+<div class="flex items-baseline gap-2">
+<span class="hero-metric text-primary">12,450</span>
+<span class="text-on-surface-variant font-bold">LBS</span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-2 gap-4 mb-10">
+<div class="bg-surface-container-high rounded-xl p-4 flex flex-col justify-between aspect-square ghost-border">
+<span class="material-symbols-outlined text-secondary text-2xl mb-4" style="font-variation-settings: 'FILL' 1;">timer</span>
+<div>
+<p class="text-on-surface-variant text-[10px] font-medium tracking-widest uppercase mb-1">Duration</p>
+<p class="text-2xl font-bold">1:15:32</p>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-4 flex flex-col justify-between aspect-square ghost-border">
+<span class="material-symbols-outlined text-primary text-2xl mb-4" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<div>
+<p class="text-on-surface-variant text-[10px] font-medium tracking-widest uppercase mb-1">Calories</p>
+<p class="text-2xl font-bold text-primary">840</p>
+</div>
+</div>
+</div>
+<section class="mb-12">
+<h3 class="text-sm font-bold tracking-widest uppercase text-on-surface-variant border-b border-outline-variant/20 pb-2 mb-4">New Records</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center bg-surface-container-lowest p-4 rounded-lg ghost-border">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<div>
+<p class="font-bold text-sm">Deadlift</p>
+<p class="text-xs text-on-surface-variant">1RM PR</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-primary text-lg">405 LBS</p>
+</div>
+</div>
+<div class="flex justify-between items-center bg-surface-container-lowest p-4 rounded-lg ghost-border">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+<div>
+<p class="font-bold text-sm">Bench Press</p>
+<p class="text-xs text-on-surface-variant">Volume PR</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-lg">3,200 LBS</p>
+</div>
+</div>
+</div>
+</section>
+<div class="mt-auto pt-8">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-bold py-4 rounded-xl shadow-[0_10px_30px_rgba(117,255,158,0.2)] hover:opacity-90 transition-opacity flex justify-center items-center gap-2 mb-4">
+<span class="material-symbols-outlined">ios_share</span>
+                SHARE WORKOUT
+            </button>
+<button class="w-full border border-outline-variant/40 text-on-surface-variant font-bold py-4 rounded-xl hover:bg-surface-container-high transition-colors">
+                FINISH
+            </button>
+</div>
+</main>
+</body></html>

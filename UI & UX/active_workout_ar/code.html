@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>جلسة نشطة - PROJECT ATLAS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {},
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {},
+        "fontFamily": {
+                "headline": [
+                        "Public Sans"
+                ],
+                "body": [
+                        "Public Sans"
+                ],
+                "label": [
+                        "Public Sans"
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+  body {
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+  }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body min-h-screen flex flex-col pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#131313]/40 backdrop-blur-md text-[#75ff9e] font-['Inter'] tracking-tight font-bold uppercase text-xl italic tracking-tighter docked full-width top-0 sticky shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 h-16 w-full z-40">
+<div class="flex items-center gap-3">
+<img alt="User profile avatar" class="w-8 h-8 rounded-full border-2 border-[#2a2a2a] object-cover" data-alt="Portrait of a user avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsf8Nj7GxRPft8XTyDmd-FLnNHFAlFBFnJX-mdePnfS4qV9lH3mgchigftozqgmKikuupm5BF1ddeg06xwGE9BbD2RdCDQarFzD7bZfDTfB5V6JDvqTLJnEWhJI6y-lWiAuUSgL8dhj1DBBwujqTpfuFP1J3Pi7GNWgSbsVVrFmJv4BT6xUx5StMtcKTA1GaGgxIPg5R50VYBjKZPgdjzjUgPGR-e5b50YfyEN9cvRfF4yt3_ckJVpepzQXIcg5QvKZeYtcLY5f2iy"/>
+<span class="hover:opacity-80 transition-opacity active:scale-95 transition-transform cursor-pointer">PROJECT ATLAS</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 transition-transform cursor-pointer text-[#75ff9e]" data-icon="timer">timer</span>
+<span class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 transition-transform cursor-pointer text-[#bacbb9]" data-icon="settings">settings</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow p-4 md:p-8 max-w-4xl mx-auto w-full space-y-6">
+<!-- Session Header -->
+<div class="flex justify-between items-center bg-[#131313] p-6 rounded-xl border border-[#2a2a2a]">
+<div>
+<h1 class="text-2xl font-bold font-headline text-white mb-1">جلسة نشطة</h1>
+<p class="text-sm text-[#bacbb9] font-label">يوم الصدر والظهر</p>
+</div>
+<div class="text-right">
+<div class="text-3xl font-black font-['Inter'] text-[#75ff9e] tabular-nums">42:15</div>
+<p class="text-xs text-[#bacbb9] uppercase tracking-wider font-label">وقت التمرين</p>
+</div>
+</div>
+<!-- Active Exercise Card -->
+<div class="bg-[#131313] rounded-xl border border-[#2a2a2a] overflow-hidden">
+<!-- Exercise Info -->
+<div class="p-5 border-b border-[#2a2a2a] flex justify-between items-start">
+<div>
+<h2 class="text-xl font-bold text-white font-headline mb-2">تمرين ضغط الصدر (بار)</h2>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#2a2a2a] text-xs font-medium text-[#bacbb9]">
+<span class="material-symbols-outlined text-[14px]" data-icon="history">history</span>
+            الأداء الأخير: 80kg x 8
+          </div>
+</div>
+<button class="w-10 h-10 rounded-full bg-[#2a2a2a] flex items-center justify-center hover:bg-[#333] transition-colors">
+<span class="material-symbols-outlined text-[#bacbb9]" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+<!-- Sets Table -->
+<div class="p-0">
+<div class="grid grid-cols-5 gap-2 px-5 py-3 text-xs font-bold text-[#bacbb9] uppercase tracking-wider border-b border-[#2a2a2a]">
+<div class="text-center">مجموعة</div>
+<div class="text-center col-span-2">السابق</div>
+<div class="text-center">وزن (kg)</div>
+<div class="text-center">تكرارات</div>
+</div>
+<!-- Completed Set -->
+<div class="grid grid-cols-5 gap-4 px-5 py-4 items-center bg-[#75ff9e]/10 border-b border-[#2a2a2a]/50">
+<div class="text-center font-bold text-[#75ff9e]">1</div>
+<div class="text-center col-span-2 text-sm text-[#bacbb9]">60kg x 10</div>
+<div>
+<input class="w-full bg-[#2a2a2a] border-none rounded text-center text-white focus:ring-1 focus:ring-[#75ff9e] py-2 text-lg font-bold tabular-nums" readonly="" type="number" value="60"/>
+</div>
+<div>
+<input class="w-full bg-[#2a2a2a] border-none rounded text-center text-white focus:ring-1 focus:ring-[#75ff9e] py-2 text-lg font-bold tabular-nums" readonly="" type="number" value="10"/>
+</div>
+</div>
+<!-- Active Set -->
+<div class="grid grid-cols-5 gap-4 px-5 py-4 items-center bg-[#1a1a1a] border-l-4 border-[#75ff9e] border-b border-[#2a2a2a]/50 relative">
+<div class="text-center font-bold text-white">2</div>
+<div class="text-center col-span-2 text-sm text-[#bacbb9]">80kg x 8</div>
+<div>
+<input autofocus="" class="w-full bg-[#2a2a2a] border border-[#333] rounded text-center text-white focus:ring-1 focus:ring-[#75ff9e] focus:border-[#75ff9e] py-2 text-lg font-bold tabular-nums" placeholder="80" type="number"/>
+</div>
+<div>
+<input class="w-full bg-[#2a2a2a] border border-[#333] rounded text-center text-white focus:ring-1 focus:ring-[#75ff9e] focus:border-[#75ff9e] py-2 text-lg font-bold tabular-nums" placeholder="8" type="number"/>
+</div>
+</div>
+<!-- Upcoming Set -->
+<div class="grid grid-cols-5 gap-4 px-5 py-4 items-center">
+<div class="text-center font-bold text-[#bacbb9]">3</div>
+<div class="text-center col-span-2 text-sm text-[#bacbb9]/50">-</div>
+<div>
+<input class="w-full bg-transparent border border-[#2a2a2a] rounded text-center text-[#bacbb9] py-2 text-lg font-bold tabular-nums opacity-50" disabled="" placeholder="-" type="number"/>
+</div>
+<div>
+<input class="w-full bg-transparent border border-[#2a2a2a] rounded text-center text-[#bacbb9] py-2 text-lg font-bold tabular-nums opacity-50" disabled="" placeholder="-" type="number"/>
+</div>
+</div>
+<div class="p-4 border-t border-[#2a2a2a] flex justify-center">
+<button class="flex items-center gap-2 text-[#75ff9e] font-bold text-sm uppercase tracking-wider hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+                إضافة مجموعة
+            </button>
+</div>
+</div>
+</div>
+<!-- Next Exercise Preview -->
+<div class="bg-[#131313] p-4 rounded-xl border border-[#2a2a2a] flex items-center justify-between opacity-70">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-[#2a2a2a] rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-[#bacbb9]" data-icon="fitness_center">fitness_center</span>
+</div>
+<div>
+<p class="text-xs text-[#bacbb9] uppercase tracking-wider font-bold mb-1">التالي</p>
+<h3 class="text-white font-medium">سحب ظهر (كيبل)</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#bacbb9]" data-icon="chevron_left">chevron_left</span>
+</div>
+<!-- Actions -->
+<div class="mt-8 flex gap-4">
+<button class="flex-1 py-4 bg-[#75ff9e] text-black font-bold text-lg rounded-xl uppercase tracking-wider hover:opacity-90 active:scale-[0.98] transition-all">
+            سجل المجموعة
+        </button>
+<button class="px-6 py-4 bg-red-500/10 text-red-500 border border-red-500/20 font-bold rounded-xl uppercase tracking-wider hover:bg-red-500/20 active:scale-[0.98] transition-all">
+            إنهاء
+        </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-[#131313]/80 backdrop-blur-lg font-['Inter'] text-[10px] font-medium tracking-widest docked full-width bottom-0 fixed rounded-t-xl shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 pb-4 z-40 md:hidden">
+<!-- DASHBOARD -->
+<div class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span>DASHBOARD</span>
+</div>
+<!-- WORKOUT (Active) -->
+<div class="flex flex-col items-center justify-center text-[#75ff9e] scale-110 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="fitness_center" data-weight="fill" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<span>WORKOUT</span>
+</div>
+<!-- LIBRARY -->
+<div class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span>LIBRARY</span>
+</div>
+</nav>
+</body></html>

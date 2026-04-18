@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - Project Atlas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;900&amp;family=Public+Sans:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0D0D0D',
+                        surface: '#1A1A1A',
+                        'surface-variant': '#262626',
+                        primary: '#00E676',
+                        secondary: '#2979FF',
+                        'on-background': '#FFFFFF',
+                        'on-surface': '#E0E0E0',
+                        'on-surface-variant': '#9E9E9E',
+                        outline: '#333333'
+                    },
+                    fontFamily: {
+                        headline: ["Cairo", "Public Sans", "sans-serif"],
+                        body: ["Cairo", "Public Sans", "sans-serif"],
+                        label: ["Cairo", "Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Cairo', 'Public Sans', sans-serif;
+            background-color: #0D0D0D;
+            color: #FFFFFF;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased">
+<!-- TopAppBar -->
+<header class="bg-[#131313]/40 backdrop-blur-md text-[#75ff9e] font-['Inter'] tracking-tight font-bold uppercase docked full-width top-0 sticky bg-[#2a2a2a] shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 h-16 w-full z-50">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-[#75ff9e]">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="Close up portrait of a tough-looking fitness operator in dim dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvn76AwkzmVX3qHcmVDwa0u3QwhHqtdLQT1aqPk9RLseetogZBOdMGDW0bqAVWiGeCQqQRCmFtOns93Mc_036WhUCWSNkMcbsm0mkmm6W7JK4gWW8eQCxZDXuycZ7QEpFIxim3tubjyzMBdoH163aQ0uRGKb0brhQV0PzJLNnUgWfiHpkQwPolOycq8Z2gsgSO7wCWJF1DqQOLp1_v8VyLt8fNYnuBl2rG3vYEiPngp8Tc_cjH2lYLHm9XJKIyuhp7onXwwqEMMjQy"/>
+</div>
+<h1 class="text-xl font-black italic tracking-tighter text-[#75ff9e]">PROJECT ATLAS</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex bg-surface-variant rounded text-xs font-bold font-['Inter']">
+<span class="px-2 py-1 text-on-surface-variant cursor-pointer">EN</span>
+<span class="px-2 py-1 bg-outline text-on-background rounded cursor-pointer">AR</span>
+</div>
+<div class="flex bg-surface-variant rounded text-xs font-bold font-['Inter']">
+<span class="px-2 py-1 text-on-surface-variant cursor-pointer">LBS</span>
+<span class="px-2 py-1 bg-outline text-on-background rounded cursor-pointer">KG</span>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#75ff9e]">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow p-6 pb-24 md:pb-6 space-y-8 max-w-7xl mx-auto w-full">
+<!-- Greeting -->
+<section class="space-y-1">
+<h2 class="text-3xl md:text-4xl font-black tracking-tight text-on-background">أهلاً بك مجدداً، أيها المشغل</h2>
+<p class="text-on-surface-variant text-sm md:text-base font-medium">مستعد لدورتك القادمة</p>
+</section>
+<!-- Stats Grid (Bento style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Volume Chart Card -->
+<div class="md:col-span-2 bg-surface border border-outline rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-on-surface-variant text-sm font-bold uppercase tracking-wider mb-1">الحجم الأسبوعي</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-black text-on-background">12,450</span>
+<span class="text-sm font-bold text-on-surface-variant">كجم</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+</div>
+<!-- Mock Graph Area -->
+<div class="h-32 w-full flex items-end gap-2 px-2">
+<div class="w-1/6 bg-secondary/30 hover:bg-secondary transition-colors rounded-t h-1/3 relative"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] text-on-surface-variant">السبت</div></div>
+<div class="w-1/6 bg-secondary/30 hover:bg-secondary transition-colors rounded-t h-1/2 relative"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] text-on-surface-variant">الأحد</div></div>
+<div class="w-1/6 bg-secondary/30 hover:bg-secondary transition-colors rounded-t h-1/4 relative"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] text-on-surface-variant">الإثنين</div></div>
+<div class="w-1/6 bg-secondary/50 hover:bg-secondary transition-colors rounded-t h-3/4 relative"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] text-on-surface-variant">الثلاثاء</div></div>
+<div class="w-1/6 bg-secondary hover:bg-secondary transition-colors rounded-t h-full relative"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] text-primary font-bold">الأربعاء</div></div>
+<div class="w-1/6 bg-outline rounded-t h-1/6 relative"><div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] text-on-surface-variant">الخميس</div></div>
+</div>
+</div>
+<!-- Quick Stats -->
+<div class="space-y-4">
+<div class="bg-surface border border-outline rounded-xl p-5 flex items-center justify-between">
+<div>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-wider mb-1">التمارين المكتملة</p>
+<p class="text-2xl font-black text-on-background">4</p>
+</div>
+<div class="w-10 h-10 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+</div>
+<div class="bg-surface border border-outline rounded-xl p-5 flex items-center justify-between">
+<div>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-wider mb-1">الرقم القياسي</p>
+<p class="text-2xl font-black text-on-background">140 <span class="text-sm font-bold text-on-surface-variant">كجم</span></p>
+</div>
+<div class="w-10 h-10 rounded bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">military_tech</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Activity -->
+<section>
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-lg font-bold text-on-background">النشاط الأخير</h3>
+<button class="text-primary text-sm font-bold hover:underline">عرض الكل</button>
+</div>
+<div class="space-y-3">
+<!-- Activity Item -->
+<div class="bg-surface border border-outline rounded-lg p-4 flex items-center justify-between hover:bg-surface-variant transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-outline rounded flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">fitness_center</span>
+</div>
+<div>
+<h4 class="font-bold text-on-background">دورة الجزء العلوي</h4>
+<p class="text-xs text-on-surface-variant mt-1">قبل يومين • 45 دقيقة • 8,200 كجم</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</div>
+<!-- Activity Item -->
+<div class="bg-surface border border-outline rounded-lg p-4 flex items-center justify-between hover:bg-surface-variant transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-outline rounded flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">directions_run</span>
+</div>
+<div>
+<h4 class="font-bold text-on-background">دورة الجزء السفلي</h4>
+<p class="text-xs text-on-surface-variant mt-1">قبل 4 أيام • 60 دقيقة • 11,500 كجم</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_left</span>
+</div>
+</div>
+</section>
+</main>
+<!-- FAB (Start Workout) -->
+<button class="fixed bottom-24 right-6 md:bottom-8 md:right-8 bg-primary text-background p-4 rounded-full shadow-[0_0_20px_rgba(0,230,118,0.4)] hover:scale-105 active:scale-95 transition-all z-40 flex items-center justify-center group">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+<span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-bold px-0 group-hover:px-2 group-hover:mr-2">بدء التمرين</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="md:hidden bg-[#131313]/80 backdrop-blur-lg font-['Inter'] text-[10px] font-medium tracking-widest text-[#75ff9e] docked full-width bottom-0 fixed rounded-t-xl bg-gradient-to-t from-[#131313] to-transparent shadow-[0_-10px_30px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-4">
+<button class="flex flex-col items-center justify-center text-[#75ff9e] scale-110 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span>DASHBOARD</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all">
+<span class="material-symbols-outlined mb-1">fitness_center</span>
+<span>WORKOUT</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#bacbb9] opacity-40 hover:text-[#b0c6ff] transition-colors active:translate-y-1 transition-all">
+<span class="material-symbols-outlined mb-1">menu_book</span>
+<span>LIBRARY</span>
+</button>
+</nav>
+</body></html>
